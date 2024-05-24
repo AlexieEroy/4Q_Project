@@ -1,37 +1,116 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
 }
 
-.main {
-    background-color: rgb(62, 62, 138);
-    width: 700px;
-    height: 450px;
-    padding: 30px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    border-radius: 10px;
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-label {
+group1
+{
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+group2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+group3
+{
+    margin: 0px 20px 0px 0px;
+    padding: 3px;
+    background-color: white;
+    border: 1px grey solid;
+    border-radius: 2px;
+}
+
+group4
+{
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main
+{
+    width: 700px;
+    height: 85vh;
+    margin: 3vh 0vh;
+    padding: 30px;
+    background-color: rgb(62, 62, 138);
+    position: relative;
+}
+
+label
+{
     color: white;
     font-size: 20px;
 }
 
-legend {
+input
+{
+    margin: 10px 0px 0px 0px; 
+}
+
+group2 input
+{
+    margin: 10px 25px 0px 0px;
+}
+
+group3 input
+{
+    margin: 0px 4px 0px 0px;
+}
+
+group3 label
+{
+    color: black;
+}
+
+#submit
+{
+    padding: 3px 15px;
+}
+
+#reset
+{
+    padding: 3px 15px;
+}
+
+select
+{
+    margin: 10px 25px 15px 0px;
+}
+
+textarea
+{
+    margin: 10px 0px 0px 0px;
+}
+
+legend
+{
     color: white;
     font-size: 30px;
 }
 
-#form {
+#form
+{
     width: 350px;
     height: 250px;
     position: relative;
-    left: 350px;
+    left: 250px;
 }
 
-fieldset {
+fieldset
+{
     padding: 25px;
 }
