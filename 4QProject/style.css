@@ -42,11 +42,12 @@ group4
 
 .main
 {
-    width: 700px;
+    width: 75vw;
     height: 85vh;
     margin: 3vh 0vh;
     padding: 30px;
-    background-color: rgb(62, 62, 138);
+    background-color: #749c9dd8;
+    border-radius: 10px;
     position: relative;
 }
 
@@ -107,10 +108,43 @@ legend
     width: 350px;
     height: 250px;
     position: relative;
-    left: 250px;
+    left: 450px;
+    margin: 10px;
+    padding: 10px;
 }
 
 fieldset
 {
     padding: 25px;
+}
+
+#sign_in {
+    font-size: 20px;
+    background-color: rgb(103, 199, 103);
+    width: 80px;
+    height: 35px;
+}
+
+/* Campaign details */
+
+#details {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    bottom: 275px;
+}
+
+p {
+    width: 200px;
+    margin-bottom: 25px;
+    color: #2d3842;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#text_detail {
+    width: 415px;
+    height: 300px;
+    color: #2d3842;
+    font-size: 20px;
 }
