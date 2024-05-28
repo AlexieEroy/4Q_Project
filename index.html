@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div id="log_in">
+           <form action="index.html" id="form" onsubmit="return output ();">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <group1>
+                        <group2>
+                            <label for="fName">First Name</label>
+                            <input type="text" id="fName" name="first_name" required>
+                        </group2>
+                        <group2>
+                            <label for="lName">Last Name</label>
+                            <input type="text" id="lName" name="last_name" required>
+                        </group2>
+                    </group1>
+
+                    <label for="gender">Gender</label><br>
+                    <group4>
+                        <group3>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                        </group3>
+                        <group3>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </group3>
+                        <group3>
+                            <input type="radio" id="prefernot" name="gender" value="Prefer not to say">
+                            <label for="prefernot">Prefer not to say</label>
+                        </group3>
+                    </group4>
+                    
+                    <br>
+
+                    <group1>
+                        <group2>
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="Email" required>
+                        </group2>
+                        <div id="line"></div>
+                        <group2>
+                            <label for="pword">Password</label>
+                            <input type="password" id="pword" name="pword" required>
+                        </group2>
+                    </group1>
+
+                    <label for="mobile_num">Mobile Number</label><br>
+                    <input type="text" id="mobile_num" name="mobile_num" required><br><br>
+
+                    <label for="reason">Reason</label><br>
+                    <textarea name="reason" id="reason" rows="5" cols="46"></textarea><br><br>
+
+                    <group1>
+                        <group2>
+                            <input type="submit" id="submit" name="submit">
+                        </group2>
+                        <group2>
+                            <input type="reset" id="reset" name="reset">
+                        </group2>
+                    </group1>
+                </fieldset>
+            </form> 
+        </div>
+
+        
+        <div id="details">
+            <p>Culture Appropriation</p>
+                <div id="text_detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt beatae et culpa, laudantium laboriosam hic asperiores aliquid quis? Corrupti incidunt itaque maxime et vitae odio quod, velit sequi amet!
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
