@@ -28,6 +28,5 @@ function output ()
         localStorage.setItem("num", mobile_num);
         localStorage.setItem("text", reason);
     }
-
     return false;
 }

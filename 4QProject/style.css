@@ -6,6 +6,9 @@
 
 body
 {
+    background-image: url(images/background_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +57,7 @@ group4
 label
 {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 input
@@ -118,7 +121,8 @@ fieldset
     padding: 25px;
 }
 
-#sign_in {
+#sign_in
+{
     font-size: 20px;
     background-color: rgb(103, 199, 103);
     width: 80px;
@@ -127,14 +131,16 @@ fieldset
 
 /* Campaign details */
 
-#details {
+#details
+{
     margin: 10px;
     padding: 10px;
-    position: relative;
-    bottom: 275px;
+    position: absolute;
+    bottom: 100px;
 }
 
-p {
+p
+{
     width: 200px;
     margin-bottom: 25px;
     color: #2d3842;
@@ -142,7 +148,8 @@ p {
     font-weight: bold;
 }
 
-#text_detail {
+#text_detail
+{
     width: 415px;
     height: 300px;
     color: #2d3842;
