@@ -1,3 +1,8 @@
+function input ()
+{
+    document.getElementById("fullname").innerHTML = ("");
+}
+
 function output ()
 {
     var firstname = document.getElementById("fName").value;
@@ -28,5 +33,10 @@ function output ()
         localStorage.setItem("num", mobile_num);
         localStorage.setItem("text", reason);
     }
+
+    var fullname = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
+    window.location.href = 'profile.html';
+
+    input();
     return false;
 }
