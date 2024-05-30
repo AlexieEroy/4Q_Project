@@ -1,9 +1,28 @@
-function input ()
+var object1, move, scale, id;
+
+function toProfile ()
 {
-    document.getElementById("fullname").innerHTML = ("");
+    window.location.href = 'profile.html';
+}
+
+function setProfile ()
+{
+    var bg = document.getElementById("main2");
+    var container = document.getElementById("container");
+    container.style.opacity = 1;
+    bg.style.backgroundImage = "none";
 }
 
 function output ()
+{
+    var fullname = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
+    var mail = localStorage.getItem("mail");
+
+    document.getElementById("fullname").innerHTML = (fullname);
+    document.getElementById("address").innerHTML = (mail);
+}
+
+function input ()
 {
     var firstname = document.getElementById("fName").value;
     var lastname = document.getElementById("lName").value;
@@ -34,9 +53,38 @@ function output ()
         localStorage.setItem("text", reason);
     }
 
-    var fullname = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
-    window.location.href = 'profile.html';
-
-    input();
+    toProfile();
     return false;
+}
+
+function frame1 ()
+{
+    if (scale == 200)
+    {
+        object1.style.opacity = 0;
+        setProfile();
+        clearInterval(id);
+    }
+    else
+    {
+        scale += 2;
+        object1.style.transform = 'scale(' + scale + ')';
+    }
+}
+
+async function animation1()
+{
+    object1 = document.getElementById("object1");
+    scale = 0;
+    clearInterval (id);
+    id = setInterval (frame1, 1);
+    await delay (750);
+    object1.style.transform = 'scale(0)';
+    id = null;
+}
+
+function start ()
+{
+    output();
+    animation1();
 }
