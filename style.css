@@ -295,11 +295,12 @@ p
 }
 
 .dashboard {
-    background-image: linear-gradient(to right, rgb(192, 138, 22), rgb(166, 145, 29), rgb(156, 158, 39), rgb(116, 130, 37), rgb(99, 130, 34), rgb(66, 86, 12));
+    background-color: #6f5421d8;
     height: 350px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    border-bottom: 5px #60481cd8 solid;
 }
 
 #group1
@@ -327,6 +328,35 @@ p
     margin-top: 5px;
 }
 
+#group5
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+#group6
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#group7
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#groupp
+{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 30vw;
+    overflow-wrap: break-word;
+}
+
 #container {
     display: flex;
     flex-direction: column;
@@ -335,6 +365,7 @@ p
 }
 
 #tabs {
+    font-family: "League Spartan", sans-serif;
     font-size: 35px;
     color: white;
     float: right;
@@ -366,6 +397,14 @@ p
     padding: 2px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+#logoo
+{
+    background-image: url(images/logo.png);
+    background-size: cover;
+    height: 125px;
+    width: 150px;
 }
 
 .profile {
@@ -435,6 +474,10 @@ button:active
 .belowdashboard
 {
     margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #mobile_num_header 
@@ -463,4 +506,67 @@ button:active
 {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
+}
+
+#picturee
+{
+    margin-right: 50px;
+    height: 250px;
+    width: 500px;
+    background-image: url(images/pic11.jpeg);
+    background-size: cover;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+.line
+{
+    margin-left: 10vw;
+    height: 225px;
+    width: 3px;
+    background-color: black;
+}
+
+#picture01
+{
+    margin: 2px;
+    height: 125px;
+    width: 210px;
+    background-image: url(images/pic12.png);
+    background-size: cover;
+    border: 2px black solid;
+    border-top-left-radius: 5px;
+}
+
+#picture02
+{
+    margin: 2px;
+    height: 125px;
+    width: 210px;
+    background-image: url(images/pic13.jpg);
+    background-size: cover;
+    border: 2px black solid;
+    border-top-right-radius: 5px;
+}
+
+#picture03
+{
+    margin: 2px;
+    height: 125px;
+    width: 210px;
+    background-image: url(images/pic14.jpg);
+    background-size: cover;
+    border: 2px black solid;
+    border-bottom-left-radius: 5px;
+}
+
+#picture04
+{
+    margin: 2px;
+    height: 125px;
+    width: 210px;
+    background-image: url(images/pic15.jpg);
+    background-size: cover;
+    border: 2px black solid;
+    border-bottom-right-radius: 5px;
 }

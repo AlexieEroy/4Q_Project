@@ -11,6 +11,7 @@ function setProfile ()
     var container = document.getElementById("container");
     container.style.opacity = 1;
     bg.style.backgroundImage = "none";
+    bg.style.backgroundColor = "#c9c9c9"
 }
 
 function output ()
