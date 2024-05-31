@@ -1,0 +1,1 @@
+Please input your information and sign in to our website. Make sure all fields are inputted. Once done, click the button on screen to enter your profile page. Please take note that your profile picture will change depending on your preferred gender.
