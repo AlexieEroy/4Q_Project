@@ -1,4 +1,4 @@
-var object1, move, scale, id;
+var object1, object2, move, scale, id;
 
 function toProfile ()
 {
@@ -17,9 +17,28 @@ function output ()
 {
     var fullname = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
     var mail = localStorage.getItem("mail");
+    var sex = localStorage.getItem("sex");
+    var num = localStorage.getItem("num");
+    var text = localStorage.getItem("text");
+    object2 = document.getElementById("picture");
+
+    if (sex == "Male")
+    {
+        object2.style.backgroundImage = "url(images/boy.jpg)";
+    }
+    else if (sex == "Female")
+    {
+        object2.style.backgroundImage = "url(images/girl.jpg)";
+    }
+    else if (sex == "Prefer not to say")
+    {
+        object2.style.backgroundImage = "url(images/neutral.jpg)";
+    }
 
     document.getElementById("fullname").innerHTML = (fullname);
     document.getElementById("address").innerHTML = (mail);
+    document.getElementById("num").innerHTML = (num);
+    document.getElementById("text").innerHTML = (text);
 }
 
 function input ()

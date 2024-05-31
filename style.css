@@ -271,6 +271,21 @@ legend
     padding: 0;
 }
 
+h2
+{
+    margin-left: 25px;
+}
+
+h3
+{
+    margin-left: 45px;
+}
+
+p
+{
+    margin-left: 45px;
+}
+
 #main2
 {
     background-image: url(images/backgroundd.png);
@@ -280,7 +295,7 @@ legend
 }
 
 .dashboard {
-    background-color: blue;
+    background-image: linear-gradient(to right, rgb(192, 138, 22), rgb(166, 145, 29), rgb(156, 158, 39), rgb(116, 130, 37), rgb(99, 130, 34), rgb(66, 86, 12));
     height: 350px;
     width: 100%;
     display: flex;
@@ -299,6 +314,17 @@ legend
     display: flex;
     flex-direction: column;
     margin-left: 3vw;
+}
+
+#group3
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#group4
+{
+    margin-top: 5px;
 }
 
 #container {
@@ -333,7 +359,8 @@ legend
 }
 
 #logo2 a {
-    font-family: "Lobster", sans-serif;
+    font-family: "League Spartan", sans-serif;
+    font-weight: bolder;
     color: white;
     margin-right: 5px;
     padding: 2px;
@@ -350,12 +377,15 @@ legend
 }
 
 #picture {
+    background-image: none;
+    background-size: cover;
     background-color: red;
     width: 200px;
     height: 200px;
+    border-radius: 15px;
 }
 
-#name {
+#fullname {
     font-family: "Open Sans", sans-serif;
     font-weight: bolder;
     font-size: 35px;
@@ -400,4 +430,37 @@ button:active
 {
     transform: scale(.3);
     transition: .1s ease-out;
+}
+
+.belowdashboard
+{
+    margin-left: 20px;
+}
+
+#mobile_num_header 
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#num
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+#reason_
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#text
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
 }
